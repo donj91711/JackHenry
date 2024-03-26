@@ -78,7 +78,7 @@ func weatherHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func getWeather(lat, lon float64) (*WeatherResponse, error) {
-	url := fmt.Sprintf("http://api.openweathermap.org/data/3.0/weather?lat=%f&lon=%f&appid=%s&units=imperial", lat, lon, openWeatherAPIKey)
+	url := fmt.Sprintf("http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&appid=%s&units=imperial", lat, lon, openWeatherAPIKey)
 	resp, err := http.Get(url)
 	if err != nil {
 		return nil, err

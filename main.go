@@ -8,7 +8,7 @@ import (
 	"strconv"
 )
 
-const openWeatherAPIKey = "5aa3ea249062e431351b6efadc64157d"
+const openWeatherAPIKey = "<my api key>"
 
 type WeatherCondition struct {
 	Description string `json:"description"`
